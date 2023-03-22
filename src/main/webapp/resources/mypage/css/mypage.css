@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
+
+.container_mypage {
+	/* background-color: green; */
+	background-color: #2d2d2d;
+	width: 100vw;
+	/* height: 100vh; */
+	height: 1050px;
+}
+
+.wrapper {
+	display: flex;
+	/* align-items: center; */
+	/* background-color: yellow; */
+	background-color: #2d2d2d;
+	height: 700px;
+	width: 1200px;
+	margin: 0 auto;
+	top: 12%;
+	position: relative;
+}
+
+#wrapper_inner {
+	width: 1200px;
+	height: 780px;
+	border: 1px solid gray;
+	position: absolute;
+	top: 15%;
+	background-color: #2d2d2d;
+	/* background-color: BlanchedAlmond; */
+}
+
+#pictureandbadgeandflower {
+	background-color: #2d2d2d;
+	/* background-color: blue; */
+	float: left;
+	width: 400px;
+}
+
+#picture {
+	display: flex;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	background-color: gray;
+}
+
+#badge {
+	display: flex;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 300px;
+	height: 100px;
+	background-color: orange;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#picturebutton {
+	/* background-color: red; */
+	background-color: white;
+	text-align: center;
+}
+
+#pictureedit {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+#picturedelete {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+#flowerandflowerbutton {
+	background-color: #2d2d2d;
+	float: left;
+	width: 400px;
+}
+
+#flower {
+	display: flex;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+	background-color: orange;
+}
+
+#flowerbutton {
+	width: 400px;
+	height: 30px;
+	background-color: #2d2d2d;
+	text-align: center;
+}
+
+#watering {
+	text-align: center;
+	width: 100px;
+	height: 30px;
+}
+
+#memberinformation_header {
+	width: 790px;
+	height: 50px;
+	background-color: #2d2d2d;
+	/* background-color: red; */
+	float: left;
+}
+
+#membertable {
+	float: left;
+	/* margin-right: 30px; */
+	/* text-align: left; */
+	background-color: #2d2d2d;
+	padding-left: 40px;
+	width: 790px;
+}
+
+th, td {
+	padding: 20px 5px;
+}
+
+.mypage_information {
+	font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+	font-size: 24px;
+	width: 210px;
+	background-color: #2d2d2d;
+	/* background-color: red; */
+}
+
+.mypage_information_text {
+	font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+	font-size: 24px;
+	width: 400px;
+	background-color: #2d2d2d;
+	/* background-color: red; */
+}
+
+
+#memberbutton {
+	background-color: #2d2d2d;
+	/* background-color: yellow; */
+	text-align: right;
+	width: 790px;
+	height: 50px;
+	float: left;
+	display: flex;
+	justify-content: flex-end;
+	/* margin : 5px; */
+	margin-top: 14px;
+	
+}
+
+#informationedit {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+#passwordedit {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+}
+
+/* 프레임 8px여백 없애기 위함  */
+body {
+	margin: 0;
+}

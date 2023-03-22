@@ -1,0 +1,57 @@
+#container_searchbox {
+	text-align: right;
+	width: 1200px;
+	height: 50px;
+}
+
+.searchbox {
+	padding: 10px;
+	position: absolute;
+	top: 110px;
+	right: 2.5%;
+	transform: translate(0%, -50%);
+	height: 25px;
+	background-color: #fff;
+	border: 1px solid rgb(36, 61, 91);
+	border-radius: 30px;
+	transition: 0.4s;
+	width: 30px;
+}
+
+/* 검색창 박스의 음영 및 크기  */
+.searchbox:hover {
+	box-shadow: 0px 0px .5px 1px rgb(36, 61, 91);
+	width: 200px;
+}
+
+.searchbtn {
+	text-decoration: none;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.searchtxt {
+	display: flex;
+	padding: 0;
+	width: 0px;
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	font-size: 1rem;
+	line-height: 30px;
+	transition: .4s;
+}
+
+/* 버튼에 마우스 올릴 시, 커지는 텍스트 박스 크기 */
+.searchbox:hover>.searchtxt {
+	width: 150px;
+	padding: 0 6px;
+}

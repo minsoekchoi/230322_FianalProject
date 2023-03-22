@@ -1,0 +1,126 @@
+#container_list {
+	background-color: white;
+	width: 100vw;
+	height: 1050px;
+}
+
+#wrapper_list {
+	background-color: white;
+	display: flex;
+	position: relative;
+	align-items: center;
+	height: 1050px;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#wrapper_list_inner {
+	background-color: white;
+	width: 1200px;
+	min-height: 900px;
+	position: absolute;
+	top: 14%;
+}
+
+/* 리스트 제목  */
+#headline {
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	user-select: none;
+}
+
+/* 전체적인 표의 속성  */
+.list_table {
+	margin: auto;
+	width: 95%;
+	border-collapse: collapse;
+	color: #333;
+	border-radius: .4em;
+	overflow: hidden;
+	table-layout: fixed;
+	font-size: 15px;
+	user-select: none;
+}
+
+/* 표 헤더 속성  */
+.list_table tr:first-child {
+	background-color: rgb(36, 61, 91);
+	color: #fff;
+	text-align: center;
+}
+
+/* 표 헤더 제외 표 속성 */
+.list_table tr {
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: white;
+	border-color: rgb(36, 61, 91);
+}
+
+/* 표에서 글자수 많으면 ... 효과  */
+.list_table td {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.list_table td:first-child {
+	margin-top: .5em;
+}
+
+.list_table td:last-child {
+	margin-bottom: .5em;
+}
+
+.list_table th, .list_table td {
+	text-align: center;
+	padding: .5em 1em;
+}
+
+@media screen and (max-width: 601px) {
+	.list_table tr:nth-child(2) {
+		border-top: none;
+	}
+	.list_table th:first-child, .list_table td:first-child {
+		font-weight: bold;
+		color: black;
+	}
+	.list_table td a {
+		text-decoration: none;
+		color: black;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.list_table tr:hover:not(:first-child) {
+		background-color: rgba(131, 244, 180, 0.3);
+	}
+	.list_table td:before {
+		display: none;
+	}
+	.list_table td a {
+		text-decoration: none;
+		color: black;
+	}
+	.list_table th, .list_table td {
+		display: table-cell;
+		padding: .25em .5em;
+	}
+	.list_table th:first-child, .list_table td:first-child {
+		font-weight: bold;
+		padding-left: 0;
+	}
+	.list_table th:last-child, .list_table td:last-child {
+		padding-right: 0;
+	}
+	.list_table th, .list_table td {
+		padding: 1em !important;
+	}
+}
+
+/* 프레임 8px여백 없애기 위함  */
+body {
+	margin: 0;
+}
