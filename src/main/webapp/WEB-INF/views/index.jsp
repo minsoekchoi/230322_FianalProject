@@ -44,7 +44,7 @@ nav {
 			<ul class="menu">
 				<li><a href="mypage.do"> 내정보 기본틀 </a></li>
 				<li><a href="boardlist_report.do"> 신고내역리스트 기본틀 </a></li>
-
+				<li><a href="view_report.do"> 신고내용 </a></li>
 			</ul>
 		</nav>
 	</header>

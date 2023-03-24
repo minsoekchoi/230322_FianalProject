@@ -14,8 +14,14 @@ public class MyController {
 	}
 
 	@RequestMapping("boardlist_report.do")
-	public ModelAndView myBoardList_1() {
+	public ModelAndView boardList_Report() {
 		ModelAndView mv = new ModelAndView("boardlist_report");
+		return mv;
+	}
+	
+	@RequestMapping("view_report.do")
+	public ModelAndView view_Report() {
+		ModelAndView mv = new ModelAndView("view_report");
 		return mv;
 	}
 }

@@ -1,0 +1,97 @@
+/* 전체적인 표의 속성  */
+.view_report_table {
+	margin: auto;
+	width: 95%;
+	border-collapse: collapse;
+	color: #333;
+	overflow: hidden;
+	table-layout: fixed;
+	font-size: 18px;
+	user-select: none;
+	text-align: center;
+}
+
+/* 카테고리 속성 */
+.view_report_category {
+	background-color: rgb(36, 61, 91);
+	color: #fff;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+}
+
+/* 카테고리 제외 표 속성 */
+.view_report_table tr {
+	border-top: 1px solid #ddd;
+	background-color: white;
+	border-color: rgb(36, 61, 91);
+	height: 70px;
+}
+
+/* 신고내용 체크 사항 목록 */
+.view_report_category_checkbox_top {
+	background-color: rgb(36, 61, 91);
+	color: #fff;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	font-weight: bold;
+}
+
+/* 신고내용 체크 박스 목록 */
+.view_report_category_checkbox_bottom {
+	border-right: 1px solid black;
+}
+
+.view_report_right {
+	border-right: 1px solid black;
+}
+
+#check_box {
+	display: inline;
+	zoom: 1.5;
+}
+
+#view_report_report_content {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 400px;
+	overflow: auto;
+}
+/* 표에서 글자수 많으면 ... 효과 
+.view_report_table td {
+	display: block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}*/
+.btn {
+	display: block;
+	width: 100px;
+	height: 40px;
+	font-weight: bold;
+	border: 3px black solid;;
+	margin: 15px auto;
+	/*background-color: rgb(36, 61, 91);*/
+	/*background-color: rgb(36, 61, 91);*/
+	background-color: black;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	transition: all 0.9s, color 0.3;
+	margin-right: 0px;
+	margin-top: 3px;
+}
+
+/* .btn:hover {
+	color: #fff;
+} */
+.hover1:hover {
+	box-shadow: 200px 0 0 0 white inset;
+	font-weight: bold;
+	color: black;
+}
+
+/* 프레임 8px여백 없애기 위함  */
+body {
+	margin: 0;
+}
