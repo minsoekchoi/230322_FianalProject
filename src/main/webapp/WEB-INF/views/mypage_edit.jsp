@@ -16,7 +16,7 @@
 <link href="resources/mypage/css/mymain.css" rel="stylesheet">
 <link href="resources/mypage/css/font.css" rel="stylesheet">
 <link href="resources/mypage/css/progressbar.css" rel="stylesheet">
-<title>MyPage</title>
+<title>MyPage수정창</title>
 <link rel='stylesheet'
 	href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 <link rel='stylesheet'
@@ -65,7 +65,7 @@
 		<div class="container_mypage">
 			<div class="wrapper">
 				<h2
-					style="font-size: 30px; color: white; margin: 0 auto; margin-top: 25px;">마이페이지</h2>
+					style="font-size: 30px; color: white; margin: 0 auto; margin-top: 25px;">마이페이지수정창</h2>
 				<!-- 바깥쪽 div를 relative를 주고 안쪽 div를 absolute를 준다음 top %로 위치를 조정할수 있다.  -->
 				<div id="wrapper_inner">
 					<div id="pictureandbadgeandflower">
@@ -78,11 +78,11 @@
 								</div>
 							</div>
 						</div>
-						<div id="badge">BADGES</div>
-						<!-- <div id="picturebutton">
+						<div id="picturebutton">
 							<input type="button" value="사진수정" id="pictureedit" /> <input
 								type="button" value="사진삭제" id="picturedelete" />
-						</div> -->
+						</div>
+						<div id="badge">BADGES</div>
 						<div id="flowerandflowerbutton">
 							<div id="flower">FLOWER</div>
 							<!-- <div id="flowerbutton">
@@ -140,16 +140,15 @@
 						</div>
 						<div id="memberbutton">
 							<div class="portfolio-experiment">
-								<a> <span class="text">회원정보수정</span> <span
-									class="line -right"></span> <span class="line -top"></span> <span
-									class="line -left"></span> <span class="line -bottom"></span>
+								<a> <span class="text">수정완료</span> <span class="line -right"></span>
+									<span class="line -top"></span> <span class="line -left"></span>
+									<span class="line -bottom"></span>
 								</a>
 							</div>
-							<div class="portfolio-experiment"
-								style="margin-left: 10px; margin-right: 20px;">
-								<a> <span class="text">비밀번호변경</span> <span
-									class="line -right"></span> <span class="line -top"></span> <span
-									class="line -left"></span> <span class="line -bottom"></span>
+							<div class="portfolio-experiment" style="margin-left: 10px; margin-right: 20px;">
+								<a> <span class="text">닫기</span> <span class="line -right"></span>
+									<span class="line -top"></span> <span class="line -left"></span>
+									<span class="line -bottom"></span>
 								</a>
 							</div>
 							<!-- <input type="button" value="회원정보수정" id="informationedit" /> -->

@@ -1,7 +1,7 @@
 #container_radio {
-	position: absolute;
-	top: 100px;
 	width: 1200px;
+	position: absolute;
+	top: 80px;
 }
 
 #container_radio_form {
@@ -33,7 +33,7 @@ label span {
 	padding: 0.375em 0.75em 0.375em 0.375em;
 	border-radius: 99em;
 	transition: 0.25s ease;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 label span:hover {

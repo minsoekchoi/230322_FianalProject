@@ -6,7 +6,7 @@
 	color: #333;
 	overflow: hidden;
 	table-layout: fixed;
-	font-size: 18px;
+	font-size: 13px;
 	user-select: none;
 	text-align: center;
 }
@@ -14,7 +14,7 @@
 /* 카테고리 속성 */
 .view_report_category {
 	background-color: rgb(36, 61, 91);
-	color: #fff;
+	color: #F8F8F8;
 	border-bottom: 1px solid black;
 	font-weight: bold;
 }
@@ -22,9 +22,9 @@
 /* 카테고리 제외 표 속성 */
 .view_report_table tr {
 	border-top: 1px solid #ddd;
-	background-color: white;
+	background-color: #F8F8F8;
 	border-color: rgb(36, 61, 91);
-	height: 70px;
+	height: 50px;
 }
 
 /* 신고내용 체크 사항 목록 */
@@ -54,7 +54,7 @@
 #view_report_report_content {
 	border-right: 1px solid black;
 	border-bottom: 1px solid black;
-	height: 400px;
+	height: 350px;
 	overflow: auto;
 }
 /* 표에서 글자수 많으면 ... 효과 
@@ -71,8 +71,6 @@
 	font-weight: bold;
 	border: 3px black solid;;
 	margin: 15px auto;
-	/*background-color: rgb(36, 61, 91);*/
-	/*background-color: rgb(36, 61, 91);*/
 	background-color: black;
 	text-align: center;
 	cursor: pointer;
@@ -82,9 +80,6 @@
 	margin-top: 3px;
 }
 
-/* .btn:hover {
-	color: #fff;
-} */
 .hover1:hover {
 	box-shadow: 200px 0 0 0 white inset;
 	font-weight: bold;

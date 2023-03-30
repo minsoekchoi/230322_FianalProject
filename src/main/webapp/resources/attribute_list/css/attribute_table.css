@@ -1,29 +1,27 @@
 #container_list {
-	background-color: white;
-	width: 100vw;
-	min-height: 1050px;
-	/*max-height: 1250px;*/
-	height: 100vh;
-}
-
-#wrapper_list {
-	background-color: white;
-	display: flex;
-	position: relative;
-	align-items: center;
-	height: 100%;
-	/*height: 1200px;*/
 	width: 1200px;
+	height: 780px;
+	background-color: #F8F8F8;
 	margin: 0 auto;
 }
 
-#wrapper_list_inner {
-	background-color: white;
+#wrapper_list {
 	width: 1200px;
-	height: 80vh;
-	/*min-height: 800px;*/
+	height: 780px;
+	background-color: #F8F8F8;
+	margin: 0 auto;
+	display: flex;
+	position: relative;
+	align-items: center;
+	position: relative;
+	display: flex;
+}
+
+#wrapper_list_inner {
+	width: 1200px;
+	height: 780px;
+	background-color: #F8F8F8;
 	position: absolute;
-	top: 14%;
 }
 
 /* 리스트 제목  */
@@ -32,25 +30,27 @@
 	color: black;
 	text-align: center;
 	user-select: none;
+	margin-top: 30px;
 }
 
 /* 전체적인 표의 속성  */
+/* 글자크기로 표 크기 결정 */
 .list_table {
-	margin: auto;
 	width: 95%;
+	margin: auto;
 	border-collapse: collapse;
 	color: #333;
 	border-radius: .4em;
 	overflow: hidden;
 	table-layout: fixed;
-	font-size: 15px;
+	font-size: 13px;
 	user-select: none;
 }
 
 /* 표 헤더 속성  */
 .list_table tr:first-child {
 	background-color: rgb(36, 61, 91);
-	color: #fff;
+	color: #F8F8F8;
 	text-align: center;
 }
 
@@ -58,13 +58,12 @@
 .list_table tr {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
-	background-color: white;
+	background-color: #F8F8F8;
 	border-color: rgb(36, 61, 91);
 }
 
 /* 표에서 글자수 많으면 ... 효과  */
 .list_table td {
-	display: block;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
@@ -80,7 +79,6 @@
 
 .list_table th, .list_table td {
 	text-align: center;
-	padding: .5em 1em;
 }
 
 @media screen and (max-width: 601px) {
@@ -110,7 +108,6 @@
 	}
 	.list_table th, .list_table td {
 		display: table-cell;
-		padding: .25em .5em;
 	}
 	.list_table th:first-child, .list_table td:first-child {
 		font-weight: bold;
@@ -123,6 +120,8 @@
 		padding: 1em !important;
 	}
 }
+
+/* 신고내용 */
 
 /* 프레임 8px여백 없애기 위함  */
 body {

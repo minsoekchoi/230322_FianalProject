@@ -42,9 +42,25 @@ nav {
 		<h2>한국 ICT 인재 개발원</h2>
 		<nav>
 			<ul class="menu">
-				<li><a href="mypage.do"> 내정보 기본틀 </a></li>
+				<li><a href="view_origin.do"> 메인창 기본틀 </a></li>
+				<li><a href="mypage.do"> 내프로필 </a></li>
+				<li><a href="mypage_edit.do"> 내프로필수정창 </a></li>
+				<li><a href="mypage_edit_2.do"> 내프로필수정창_2 </a></li>
+				<li><a href="passwordcheck.do"> 비밀번호확인창 </a></li>
+				<li><a href="passwordedit.do"> 비밀번호수정창 </a></li>
 				<li><a href="boardlist_report.do"> 신고내역리스트 기본틀 </a></li>
 				<li><a href="view_report.do"> 신고내용 </a></li>
+				<li><a href="boardlist.do"> 자유게시판 공지사항 </a></li>
+				<li><a href="boardlist_write.do"> 게시글작성 </a></li>
+				<li><a href="view_boardlist.do"> 게시글보기 </a></li>
+				<li><a href="boardlist_member.do"> 회원 관리 리스트 </a></li>
+				<li><a href="boardlist_room.do"> 방 관리 리스트 </a></li>
+				<li><a href="boardlist_outmember.do"> 탈퇴 회원 관리 리스트 </a></li>
+				<li><a href="usercreate_super.do"> 사용자 생성 </a></li>
+				<li><a href="userlist_super.do"> 사용자 관리 리스트 </a></li>
+				<li><a href="admincreate_super.do"> 관리자 생성 </a></li>
+				<li><a href="adminlist_super.do"> 관리자 관리 리스트 </a></li>
+
 			</ul>
 		</nav>
 	</header>

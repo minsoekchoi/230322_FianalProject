@@ -14,7 +14,7 @@
 <link href="resources/attribute_list/css/searchbox.css" rel="stylesheet">
 <link href="resources/attribute_list/css/table_buttons.css"
 	rel="stylesheet">
-<title>신고내역리스트</title>
+<title>사용자 관리 리스트</title>
 <link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
@@ -29,21 +29,19 @@
 			<div id="container_list">
 				<div id="wrapper_list">
 					<div id="wrapper_list_inner">
-						<h2 id="headline">신고내역리스트</h2>
+						<h2 id="headline">사용자 관리 리스트</h2>
 						<div id="container_radio">
 							<form id="container_radio_form">
 								<label class="radio_label"> <input type="radio"
 									name="radio" checked /> <span>전체보기</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고번호</span>
+								</label><label class="radio_label"> <input type="radio"
+									name="radio" /> <span>회원번호</span>
 								</label> <label class="radio_label"> <input type="radio"
 									name="radio" /> <span>ID</span>
 								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>가해자닉네임</span>
+									name="radio" /> <span>닉네임</span>
 								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고자닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고일자</span>
+									name="radio" /> <span>생년월일</span>
 								</label>
 							</form>
 						</div>
@@ -130,125 +128,105 @@
 								<col width="200px" />
 								<col width="200px" />
 								<col width="200px" />
-								<col width="200px" />
-								<col width="120px" />
-								<col width="120px" />
+								<col width="220px" />
+								<col width="220px" />
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>신고번호</th>
-									<th>ID(신고받은사람)</th>
-									<th>닉네임(신고받은사람)</th>
-									<th>신고자</th>
-									<th>신고사유</th>
-									<th>신고일자</th>
-									<th>신고삭제</th>
+									<th>회원번호</th>
+									<th>ID</th>
+									<th>닉네임</th>
+									<th>생년월일</th>
+									<th>사진</th>
+									<th>회원탈퇴&정보삭제</th>
 								</tr>
 
 								<tr class="KOTRA-fontsize-80">
 									<td>1</td>
 									<td>dfd232@naver.com</td>
-									<td>망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니</td>
-									<td>dfd43545@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>2</td>
-									<td>2134232@naver.com</td>
-									<td>가시</td>
+									<td>1</td>
 									<td>dfd232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>3</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>4</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>5</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>6</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>7</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>8</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>9</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>10</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>1</td>
+									<td>dfd232@naver.com</td>
+									<td>회원1234</td>
+									<td>1992.03.31</td>
+									<td><a class="gradient-btn">사진보기</a></td>
+									<td><a class="gradient-btn">탈퇴&정보삭제</a></td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="7">< 1 2 3 4 5 ></td>
+									<td colspan="6">< 1 2 3 4 5 ></td>
 								</tr>
+
 							</tfoot>
 						</table>
 					</div>

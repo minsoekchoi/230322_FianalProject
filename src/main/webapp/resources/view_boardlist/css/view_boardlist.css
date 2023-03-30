@@ -1,0 +1,37 @@
+#view_boardlist_category {
+	border: 2px solid rgb(233, 233, 233);
+	color: black;
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#view_boardlist_content {
+	width: 1140px;
+	height: 400px;
+	font-size: 15px;
+	border: 2px solid rgb(233, 233, 233);
+	outline: none;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#bottom_border {
+	border-top: 2px solid rgb(233, 233, 233);
+	width: 1140px;
+	height: 10px;
+	margin: 0 auto;
+}
+
+#view_boardlist_comment {
+	width: 1140px;
+	height: 100px;
+	font-size: 15px;
+	border: 2px solid rgb(233, 233, 233);
+	outline: none;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	display: block;
+}

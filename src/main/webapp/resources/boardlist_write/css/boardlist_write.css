@@ -1,0 +1,39 @@
+#top_border {
+	background-color: #F8F8F8;
+	width: 1140px;
+	height: 10px;
+	margin: 0 auto;
+	border-top: 1px solid black;
+	margin-top: 50px;
+	display: block;
+}
+
+#boardlist_write_title {
+	/* 패딩 준 만큼 빼준다 */
+	/* 1200*0.95-10*2 */
+	width: 1120px;
+	height: 32px;
+	color: gray;
+	font-size: 15px;
+	display: block;
+	border: 2px solid rgb(233, 233, 233);
+	outline: none;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+#boardlist_write_content {
+	display: block;
+	width: 1120px;
+	height: 400px;
+	margin: 0 auto;
+	color: gray;
+	font-size: 15px;
+	border: 2px solid rgb(233, 233, 233);
+	outline: none;
+	padding: 10px;
+	margin-bottom: 10px;
+	resize: none;
+	font-size: 15px;
+}

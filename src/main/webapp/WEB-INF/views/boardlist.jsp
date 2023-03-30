@@ -14,7 +14,7 @@
 <link href="resources/attribute_list/css/searchbox.css" rel="stylesheet">
 <link href="resources/attribute_list/css/table_buttons.css"
 	rel="stylesheet">
-<title>신고내역리스트</title>
+<title>자유게시판</title>
 <link rel="stylesheet" type="text/css"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
@@ -29,21 +29,17 @@
 			<div id="container_list">
 				<div id="wrapper_list">
 					<div id="wrapper_list_inner">
-						<h2 id="headline">신고내역리스트</h2>
+						<h2 id="headline">자유게시판</h2>
 						<div id="container_radio">
 							<form id="container_radio_form">
 								<label class="radio_label"> <input type="radio"
 									name="radio" checked /> <span>전체보기</span>
 								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고번호</span>
+									name="radio" /> <span>제목</span>
 								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>ID</span>
+									name="radio" /> <span>작성자</span>
 								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>가해자닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고자닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고일자</span>
+									name="radio" /> <span>작성일</span>
 								</label>
 							</form>
 						</div>
@@ -127,127 +123,100 @@
 						<table class="list_table">
 							<colgroup>
 								<col width="100px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="120px" />
-								<col width="120px" />
+								<col width="590px" />
+								<col width="150px" />
+								<col width="150px" />
+								<col width="150px" />
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>신고번호</th>
-									<th>ID(신고받은사람)</th>
-									<th>닉네임(신고받은사람)</th>
-									<th>신고자</th>
-									<th>신고사유</th>
-									<th>신고일자</th>
-									<th>신고삭제</th>
+									<th>글종류</th>
+									<th>제목</th>
+									<th>작성자</th>
+									<th>작성일</th>
+									<th>조회수</th>
 								</tr>
 
 								<tr class="KOTRA-fontsize-80">
-									<td>1</td>
-									<td>dfd232@naver.com</td>
-									<td>망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니망나니</td>
-									<td>dfd43545@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>공지</td>
+									<td>3월 신고 내역 처리 결과</td>
+									<td>관리자</td>
+									<td>2023.03.27</td>
+									<td>155</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>2</td>
-									<td>2134232@naver.com</td>
-									<td>가시</td>
-									<td>dfd232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>공지</td>
+									<td>3월의 이벤트</td>
+									<td>관리자</td>
+									<td>2023.03.27</td>
+									<td>250</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>3</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
-								</tr>
-
-								<tr class="KOTRA-fontsize-80">
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
 									<td>4</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>5</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>6</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>7</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>8</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>9</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
-
 								<tr class="KOTRA-fontsize-80">
-									<td>10</td>
-									<td>dfd43545@naver.com</td>
-									<td>겁쟁이</td>
-									<td>2134232@naver.com</td>
-									<td><a class="gradient-btn">자세히보기</a></td>
-									<td>2023.03.15</td>
-									<td><a class="gradient-btn">신고삭제</a></td>
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
+								</tr>
+								<tr class="KOTRA-fontsize-80">
+									<td>게시글</td>
+									<td>클라이밍 장소 추천 받아요</td>
+									<td>홀드왕</td>
+									<td>2023.03.22</td>
+									<td>4</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colspan="7">< 1 2 3 4 5 ></td>
+									<td colspan="5">< 1 2 3 4 5 ></td>
+								</tr>
+								<tr>
+									<td colspan="5"
+										style="background-color: #F8F8F8; border-bottom: 1px solid #F8F8F8;">
+										<button class="btn hover1">게시글작성</button>
+									</td>
 								</tr>
 							</tfoot>
 						</table>
