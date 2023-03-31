@@ -25,12 +25,6 @@ public class MyController {
 		return mv;
 	}
 
-	@RequestMapping("mypage_edit_2.do")
-	public ModelAndView myPage_Edit_2() {
-		ModelAndView mv = new ModelAndView("mypage_edit_2");
-		return mv;
-	}
-
 	@RequestMapping("passwordcheck.do")
 	public ModelAndView passwordCheck() {
 		ModelAndView mv = new ModelAndView("passwordcheck");

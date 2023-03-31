@@ -49,6 +49,7 @@
 #check_box {
 	display: inline;
 	zoom: 1.5;
+	cursor: pointer;
 }
 
 #view_report_report_content {
@@ -57,13 +58,7 @@
 	height: 350px;
 	overflow: auto;
 }
-/* 표에서 글자수 많으면 ... 효과 
-.view_report_table td {
-	display: block;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
-}*/
+
 .btn {
 	display: block;
 	width: 100px;

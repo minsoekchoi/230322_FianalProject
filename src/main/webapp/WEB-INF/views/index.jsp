@@ -45,7 +45,6 @@ nav {
 				<li><a href="view_origin.do"> 메인창 기본틀 </a></li>
 				<li><a href="mypage.do"> 내프로필 </a></li>
 				<li><a href="mypage_edit.do"> 내프로필수정창 </a></li>
-				<li><a href="mypage_edit_2.do"> 내프로필수정창_2 </a></li>
 				<li><a href="passwordcheck.do"> 비밀번호확인창 </a></li>
 				<li><a href="passwordedit.do"> 비밀번호수정창 </a></li>
 				<li><a href="boardlist_report.do"> 신고내역리스트 기본틀 </a></li>

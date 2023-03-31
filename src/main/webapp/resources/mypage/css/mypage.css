@@ -1,18 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,900);
 
 .container_mypage {
-	/* background-color: green; */
 	background-color: #2d2d2d;
 	width: 100vw;
-	/* height: 100vh; */
 	height: 1050px;
 }
 
 .wrapper {
 	display: flex;
-	/* align-items: center; */
-	/* background-color: yellow; */
-	background-color: #2d2d2d;
+	background-color: black;
 	height: 700px;
 	width: 1200px;
 	margin: 0 auto;
@@ -26,13 +22,11 @@
 	border: 1px solid gray;
 	position: absolute;
 	top: 15%;
-	background-color: #2d2d2d;
-	/* background-color: BlanchedAlmond; */
+	background-color: black;
 }
 
 #pictureandbadgeandflower {
 	background-color: #2d2d2d;
-	/* background-color: blue; */
 	float: left;
 	width: 400px;
 }
@@ -67,12 +61,14 @@
 	display: inline-block;
 	width: 100px;
 	height: 30px;
+	cursor: pointer;
 }
 
 #picturedelete {
 	display: inline-block;
 	width: 100px;
 	height: 30px;
+	cursor: pointer;
 }
 
 #flowerandflowerbutton {
@@ -107,15 +103,12 @@
 	width: 790px;
 	height: 50px;
 	background-color: #2d2d2d;
-	/* background-color: red; */
 	float: left;
 }
 
 #membertable {
 	float: left;
-	/* margin-right: 30px; */
-	/* text-align: left; */
-	background-color: #2d2d2d;
+	background-color: black;
 	padding-left: 40px;
 	width: 790px;
 }
@@ -133,8 +126,9 @@ th, td {
 	font-style: normal;
 	font-size: 24px;
 	width: 210px;
-	background-color: #2d2d2d;
-	/* background-color: red; */
+	background-color: black;
+	color: #F8F8F8;
+	user-select: none;
 }
 
 .mypage_information_text {
@@ -146,20 +140,20 @@ th, td {
 	font-style: normal;
 	font-size: 24px;
 	width: 400px;
-	background-color: #2d2d2d;
-	/* background-color: red; */
+	background-color: black;
+	border: none;
+	color: #F8F8F8;
+	user-select: none;
 }
 
 #memberbutton {
-	background-color: #2d2d2d;
-	/* background-color: yellow; */
+	background-color: black;
 	text-align: right;
 	width: 790px;
 	height: 50px;
 	float: left;
 	display: flex;
 	justify-content: flex-end;
-	/* margin : 5px; */
 	margin-top: 14px;
 }
 

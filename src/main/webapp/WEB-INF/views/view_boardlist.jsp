@@ -43,12 +43,17 @@
 							</colgroup>
 							<tbody>
 								<tr>
-									<td style="border-right: 2px solid rgb(233, 233, 233);">작성자</td>
-									<td style="border-right: 2px solid rgb(233, 233, 233);">클라이밍좋아요</td>
-									<td style="border-right: 2px solid rgb(233, 233, 233);">작성일</td>
-									<td style="border-right: 2px solid rgb(233, 233, 233);">2022.03.28</td>
-									<td style="border-right: 2px solid rgb(233, 233, 233);">조회수</td>
-									<td>200</td>
+									<td
+										style="border-right: 2px solid rgb(233, 233, 233); user-select: none;">작성자</td>
+									<td
+										style="border-right: 2px solid rgb(233, 233, 233); user-select: none;">클라이밍좋아요</td>
+									<td
+										style="border-right: 2px solid rgb(233, 233, 233); user-select: none;">작성일</td>
+									<td
+										style="border-right: 2px solid rgb(233, 233, 233); user-select: none;">2022.03.28</td>
+									<td
+										style="border-right: 2px solid rgb(233, 233, 233); user-select: none;">조회수</td>
+									<td style="user-select: none;">200</td>
 								</tr>
 							</tbody>
 						</table>
