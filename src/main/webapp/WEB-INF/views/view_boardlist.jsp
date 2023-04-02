@@ -26,10 +26,10 @@
 		</header>
 		<!-- navigator 추가  -->
 		<nav></nav>
-		<section>
-			<div id="container_list">
-				<div id="wrapper_list">
-					<div id="wrapper_list_inner">
+		<section id="section_view_boardlist">
+			<div id="container_list_view_boardlist">
+				<div id="wrapper_list_view_boardlist">
+					<div id="wrapper_list_inner_view_boardlist">
 						<h2 id="headline">[자유글]&nbsp3월의 이벤트</h2>
 						<div id="top_border"></div>
 						<table id="view_boardlist_category">
@@ -59,17 +59,25 @@
 						</table>
 						<input type="text" id="view_boardlist_content">
 						<div id="bottom_border"></div>
-						<input type="text" id="view_boardlist_comment" placeholder="댓글창">
-						<button class="btn hover1"
-							style="margin-right: 33px; margin-left: 20px; margin-top: 15px;">뒤로</button>
-						<button class="btn hover1" style="margin-top: 15px;">댓글작성</button>
-
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창1">
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창2">
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창3">
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창4">
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창5">
+						<input type="text" id="view_boardlist_comment" placeholder="댓글창6">
+						<div id="view_boardlist_buttonbox"
+							style="width: 1200px; height: 150px; background-color: #F8F8F8; margin: 0 auto;">
+							<button class="btn hover1"
+								style="margin-right: 33px; margin-left: 20px; margin-top: 15px;">뒤로</button>
+							<button class="btn hover1" style="margin-top: 15px;">댓글작성</button>
+						</div>
+						<div
+							style="width: 100vw; height: 370px; background-color: #F8F8F8;"></div>
+						<div id="footer_view_boardlist"></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- footer 추가  -->
-		<footer></footer>
 	</div>
 </body>
 </html>
