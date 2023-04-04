@@ -160,6 +160,44 @@
 	background-color: #363636;
 }
 
+/* paging */
+table tfoot ol.paging {
+	list-style: none;
+}
+
+table tfoot ol.paging li {
+	float: left;
+	margin-right: 8px;
+}
+
+table tfoot ol.paging li a {
+	display: block;
+	padding: 3px 7px;
+	border: 1px solid #00B3DC;
+	color: white;
+	font-weight: bold;
+}
+
+table tfoot ol.paging li a:hover {
+	background: #00B3DC;
+	color: white;
+	font-weight: bold;
+}
+
+.disable {
+	padding: 3px 7px;
+	border: 1px solid silver;
+	color: silver;
+}
+
+.now {
+	padding: 3px 7px;
+	border: 1px solid #00B3DC;
+	background: #00B3DC;
+	color: white;
+	font-weight: bold;
+}
+
 /* 프레임 8px여백 없애기 위함  */
 body {
 	margin: 0;
