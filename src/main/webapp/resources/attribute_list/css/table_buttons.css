@@ -44,10 +44,14 @@
 	margin-right: -12px;
 	margin-top: 1px;
 	float: right;
+	font-size: 12px;
+	padding: 0;
 }
 
 .hover1:hover {
 	box-shadow: 200px 0 0 0 white inset;
 	font-weight: bold;
 	color: black;
+	font-size: 12px;
+	padding: 0;
 }

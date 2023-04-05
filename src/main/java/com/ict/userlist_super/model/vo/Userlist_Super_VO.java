@@ -1,6 +1,6 @@
-package com.ict.boardlist_member.model.vo;
+package com.ict.userlist_super.model.vo;
 
-public class Boardlist_Member_VO {
+public class Userlist_Super_VO {
 	private int u_idx, u_status, admin_idx, u_cert;
 	private String u_email, u_pwd, u_salt, u_name, u_gender, u_bday, u_nickname, u_region, u_ptime, u_sns_type,
 			u_end_datetime, u_like_category, u_ptime2;
@@ -27,6 +27,14 @@ public class Boardlist_Member_VO {
 
 	public void setAdmin_idx(int admin_idx) {
 		this.admin_idx = admin_idx;
+	}
+
+	public int getU_cert() {
+		return u_cert;
+	}
+
+	public void setU_cert(int u_cert) {
+		this.u_cert = u_cert;
 	}
 
 	public String getU_email() {
@@ -123,14 +131,6 @@ public class Boardlist_Member_VO {
 
 	public void setU_like_category(String u_like_category) {
 		this.u_like_category = u_like_category;
-	}
-
-	public int getU_cert() {
-		return u_cert;
-	}
-
-	public void setU_cert(int u_cert) {
-		this.u_cert = u_cert;
 	}
 
 	public String getU_ptime2() {

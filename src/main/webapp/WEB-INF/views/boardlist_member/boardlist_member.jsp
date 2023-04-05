@@ -71,13 +71,12 @@
 			</label>
 			<div id="sidebarMenu">
 				<ul class="sidebarMenuInner">
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;홈</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;로그인&로그아웃</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;회원관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;방관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;신고내역관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;탈퇴회원관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="#"><i>&emsp;공지사항</i></a></li>
+					<li style="font-size: 15px;"><a href="boardlist_member.do"><i>&emsp;회원관리리스트</i></a></li>
+					<li style="font-size: 15px;"><a href="boardlist_room.do"><i>&emsp;방관리리스트</i></a></li>
+					<li style="font-size: 15px;"><a href="boardlist_report.do"><i>&emsp;신고내역<br>&emsp;관리리스트</i></a></li>
+					<li style="font-size: 15px;"><a href="boardlist_outmember.do"><i>&emsp;탈퇴회원<br>&emsp;관리리스트</i></a></li>
+					<li style="font-size: 15px;"><a href="boardlist.do"><i>&emsp;공지사항</i></a></li>
+					<li style="font-size: 15px;"><a href="admin_login.do"><i>&emsp;로그아웃</i></a></li>
 				</ul>
 			</div>
 			<div class="option">
@@ -292,8 +291,8 @@
 						</div>
 					</div>
 					<div class="footer-col1">
-						<h2 style="margin-top: 32px;">Social Media</h2>
-						<ul class="social-icons">
+						<h2 style="margin-top: 22px">Social Media</h2>
+						<ul class="social-icons" style="margin-top: -3px;">
 							<li><a
 								href="https://www.facebook.com/profile.php?id=100091363184815"
 								class="social-square"><i class="fab  fa-facebook-f fa-1x"></i></a></li>

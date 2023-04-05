@@ -42,18 +42,12 @@
 	src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <link href="resources/homepage/css/homepage.css" rel="stylesheet">
 <!--  -->
-
 <link href="resources/view_origin/css/view_origin.css" rel="stylesheet">
 <link href="resources/attribute_list/css/attribute_table.css"
 	rel="stylesheet">
-<link href="resources/attribute_list/css/radio_buttons.css"
-	rel="stylesheet">
-<link href="resources/attribute_list/css/searchbox.css" rel="stylesheet">
 <link href="resources/attribute_list/css/table_buttons.css"
 	rel="stylesheet">
-<title>탈퇴회원관리리스트</title>
-<link rel="stylesheet" type="text/css"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<title>관리자 생성</title>
 </head>
 <body>
 	<div id="wrap">
@@ -70,53 +64,31 @@
 			</label>
 			<div id="sidebarMenu">
 				<ul class="sidebarMenuInner">
-					<li style="font-size: 15px;"><a href="boardlist_member.do"><i>&emsp;회원관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_room.do"><i>&emsp;방관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_report.do"><i>&emsp;신고내역<br>&emsp;관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_outmember.do"><i>&emsp;탈퇴회원<br>&emsp;관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist.do"><i>&emsp;공지사항</i></a></li>
-					<li style="font-size: 15px;"><a href="admin_login.do"><i>&emsp;로그아웃</i></a></li>
+					<li><a href="#"><i class="fi fi-sr-home">&emsp;&emsp;홈</i></a></li>
+					<li><a href="#"><i class="fi fi-rr-user">&emsp;로그인</i></a></li>
+					<li><a href="#"><i class="fi fi-rr-basketball">&emsp;농구</i></a></li>
+					<li><a href="#"><i class="fi fi-rr-baby">&ensp;클라이밍</i></a></li>
+					<li><a href="#"><i class="fi fi-rs-bowling">&emsp;볼링</i></a></li>
+					<li><a href="#"><i class="fi fi-ts-racquet">&ensp;배드민턴</i></a></li>
+					<li><a href="#"><i class="fi fi-rs-house-flood">&ensp;방만들기</i></a></li>
+					<li><a href="#"><i class="fi fi-rr-thumbtack">&ensp;신고하기</i></a></li>
+					<li><a href="#"><i class="fi fi-rr-comment-sms">&ensp;게시판</i></a></li>
 				</ul>
 			</div>
+
+
 			<div class="option">
-				<div class="dropdown1">
-					<button onclick="dp_menu1()" class="button1">
-						<i class="material-icons dp48">notifications</i>
-					</button>
-					<spacer></spacer>
-					<span class="num-count">2</span>
-					<div style="display: none;" id="drop-content1">
-						<div class="notification-icon right"></div>
-						<div class="profile1"></div>
-						<div style="float: right;">
-							<div class="notification-container1">
-								<input class="checkbox" type="checkbox" id="size_1"
-									value="small" checked /> <label class="notification new"
-									for="size_1"><em>1</em> new <a href="">guest
-										account(s)</a> have been created.<i
-									class="material-icons dp48 right">clear</i></label> <input
-									class="checkbox" type="checkbox" id="size_2" value="small"
-									checked /> <label class="notification new" for="size_2"><em>2</em>
-									new <a href="">lead(s)</a> are available in the system.<i
-									class="material-icons dp48 right">clear</i></label> <input
-									class="checkbox" type="checkbox" id="size_4" value="small"
-									checked /> <label class="notification" for="size_4"><em>3</em>
-									new <a href="">calendar event(s)</a> are scheduled for today.<i
-									class="material-icons dp48 right">clear</i></label> <input
-									class="checkbox" type="checkbox" id="size_5" value="small"
-									checked /> <label class="notification" for="size_5"><em>4</em>
-									blog post <a href="">comment(s)</a> need approval.<i
-									class="material-icons dp48 right">clear</i></label>
-							</div>
-						</div>
-					</div>
-				</div>
+
+
+
 				<div class="dropdown">
 					<button onclick="dp_menu()" class="button">
 						<i class="fi fi-rr-user" style="font-size: 20px;"></i>
 					</button>
 					<spacer></spacer>
 					<div style="display: none;" id="drop-content">
+
+
 						<div class="profile"></div>
 						<div class="notification-container">
 							<input class="checkbox1" type="checkbox" id="size_1"
@@ -143,23 +115,29 @@
 					<li class="br active">현재페이지</li>
 				</ul>
 			</div>
+
 		</nav>
+
 		<script>
 			function dp_menu() {
 				let click = document.getElementById("drop-content");
 				if (click.style.display === "none") {
 					click.style.display = "block";
 					return false
+
 				} else {
 					click.style.display = "none";
+
 				}
 			}
 			function dp_menu1() {
 				let click = document.getElementById("drop-content1");
 				if (click.style.display === "none") {
 					click.style.display = "block";
+
 				} else {
 					click.style.display = "none";
+
 				}
 			}
 		</script>
@@ -167,113 +145,29 @@
 			<div id="container_list">
 				<div id="wrapper_list">
 					<div id="wrapper_list_inner">
-						<h2 id="headline">탈퇴회원관리리스트</h2>
-						<div id="container_radio">
-							<form id="container_radio_form">
-								<label class="radio_label"> <input type="radio"
-									name="radio" checked /> <span>전체보기</span>
-								</label><label class="radio_label"> <input type="radio"
-									name="radio" /> <span>회원번호</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>ID</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>생년월일</span>
-								</label>
-							</form>
-						</div>
-						<div id="container_searchbox">
-							<div class="searchbox">
-								<input type="text" class="searchtxt" placeholder="search">
-								<a class="searchbtn" href="#"> <i class="fas fa-search"></i>
-								</a>
-							</div>
-						</div>
-						<table class="list_table">
+						<h2 id="headline">관리자 생성</h2>
+						<table class="list_table" style="margin-top: 50px;">
 							<colgroup>
-								<col width="100px" />
-								<col width="295px" />
-								<col width="295px" />
-								<col width="150px" />
-								<col width="150px" />
-								<col width="150px" />
+								<col width="240px" />
+								<col width="450px" />
+								<col width="450px" />
 							</colgroup>
 							<tbody>
 								<tr>
-									<th>회원번호</th>
+									<th>관리자번호</th>
 									<th>ID</th>
 									<th>닉네임</th>
-									<th>생년월일</th>
-									<th>사진</th>
-									<th>회원정보삭제</th>
 								</tr>
-								<c:choose>
-									<c:when test="${empty boardlist_outmember}">
-										<tr>
-											<td colspan="6"><h2>자료가 존재하지 않습니다.</h2></td>
-										</tr>
-									</c:when>
-									<c:otherwise>
-										<c:forEach var="k" items="${boardlist_outmember}"
-											varStatus="vs">
-											<tr class="KOTRA-fontsize-80">
-												<td>${k.u_idx}</td>
-												<td>${k.u_email}</td>
-												<td>${k.u_nickname}</td>
-												<td>${k.u_bday}</td>
-												<td><a class="gradient-btn">사진보기</a></td>
-												<td><a class="gradient-btn">삭제</a></td>
-											</tr>
-										</c:forEach>
-									</c:otherwise>
-								</c:choose>
+								<tr class="KOTRA-fontsize-80">
+									<td>자동부여</td>
+									<td><input type="text" style="width: 300px; height: 20px"></td>
+									<td><input type="text" style="width: 300px; height: 20px"></td>
+								</tr>
 							</tbody>
-							<!-- 페이징기법 -->
-							<tfoot>
-								<tr>
-									<td colspan="6">
-										<ol class="paging">
-											<!-- 이전 -->
-											<c:choose>
-												<c:when test="${paging.beginBlock <= paging.pagePerBlock}">
-													<li class="disable">이전으로</li>
-												</c:when>
-												<c:otherwise>
-													<li><a
-														href="boardlist_outmember.do?cPage=${paging.beginBlock - paging.pagePerBlock}">이전으로</a></li>
-												</c:otherwise>
-											</c:choose>
-											<!-- 블록안에 들어간 페이지번호들 -->
-											<c:forEach begin="${paging.beginBlock}"
-												end="${paging.endBlock}" step="1" var="k">
-												<!-- 현재 페이지와 아닌 페이지 구분 -->
-												<c:choose>
-													<c:when test="${k == paging.nowPage}">
-														<!-- 현재페이지는 색깔만  -->
-														<li class="now">${k}</li>
-													</c:when>
-													<c:otherwise>
-														<!-- 다른 페이지는 링크까지 -->
-														<li><a href="boardlist_outmember.do?cPage=${k}">${k}</a></li>
-													</c:otherwise>
-												</c:choose>
-											</c:forEach>
-											<!-- 다음 -->
-											<c:choose>
-												<c:when test="${paging.endBlock >= paging.totalPage}">
-													<li class="disable">다음으로</li>
-												</c:when>
-												<c:otherwise>
-													<li><a
-														href="boardlist_outmember.do?cPage=${paging.beginBlock + paging.pagePerBlock}">다음으로</a></li>
-												</c:otherwise>
-											</c:choose>
-										</ol>
-									</td>
-								</tr>
-							</tfoot>
 						</table>
+						<button class="btn hover1"
+							style="margin-right: 33px; margin-left: 20px; margin-top: 15px;">취소</button>
+						<button class="btn hover1" style="margin-top: 15px;">관리자생성</button>
 					</div>
 				</div>
 			</div>

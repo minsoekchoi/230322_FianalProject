@@ -111,72 +111,10 @@ public class Boardlist_Report_Controller {
 
 	@RequestMapping("view_report.do")
 	public ModelAndView view_Report() {
-		ModelAndView mv = new ModelAndView("view_report");
+		ModelAndView mv = new ModelAndView("boardlist_report/view_report");
 		return mv;
 	}
 
-//	구현완료!0404
-//	@RequestMapping("boardlist.do")
-//	public ModelAndView boardlist() {
-//		ModelAndView mv = new ModelAndView("boardlist");
-//		return mv;
-//	}
-
-	@RequestMapping("boardlist_write.do")
-	public ModelAndView boardlist_Write() {
-		ModelAndView mv = new ModelAndView("boardlist_write");
-		return mv;
-	}
-
-	@RequestMapping("view_boardlist.do")
-	public ModelAndView view_Boardlist() {
-		ModelAndView mv = new ModelAndView("view_boardlist");
-		return mv;
-	}
-
-//	구현완료!0403
-//	@RequestMapping("boardlist_member.do")
-//	public ModelAndView boardList_Member() {
-//		ModelAndView mv = new ModelAndView("boardlist_member");
-//		return mv;
-//	}
-
-//	구현완료!0403
-//	@RequestMapping("boardlist_room.do")
-//	public ModelAndView boardList_Room() {
-//		ModelAndView mv = new ModelAndView("boardlist_room");
-//		return mv;
-//	}
-
-//	구현완료!0404
-//	@RequestMapping("boardlist_outmember.do")
-//	public ModelAndView boardList_Outmember() {
-//		ModelAndView mv = new ModelAndView("boardlist_outmember");
-//		return mv;
-//	}
-
-	@RequestMapping("usercreate_super.do")
-	public ModelAndView usercreate_Super() {
-		ModelAndView mv = new ModelAndView("usercreate_super");
-		return mv;
-	}
-
-	@RequestMapping("userlist_super.do")
-	public ModelAndView userlist_Super() {
-		ModelAndView mv = new ModelAndView("userlist_super");
-		return mv;
-	}
-
-	@RequestMapping("admincreate_super.do")
-	public ModelAndView admincreate_Super() {
-		ModelAndView mv = new ModelAndView("admincreate_super");
-		return mv;
-	}
-
-//	@RequestMapping("adminlist_super.do")
-//	public ModelAndView adminlist_Super() {
-//		ModelAndView mv = new ModelAndView("adminlist_super");
-//		return mv;
-//	}
+	
 
 }

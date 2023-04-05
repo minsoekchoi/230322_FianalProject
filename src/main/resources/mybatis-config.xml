@@ -15,6 +15,7 @@
 		<typeAlias type="com.ict.boardlist_outmember.model.vo.Boardlist_OutMember_VO" alias="board_outmember_vo" />
 		<typeAlias type="com.ict.login_controller.model.vo.LoginVO" alias="login_admin_vo" />
 		<typeAlias type="com.ict.adminlist_super.model.vo.Adminlist_Super_VO" alias="adminlist_super_vo" />
+		<typeAlias type="com.ict.userlist_super.model.vo.Userlist_Super_VO" alias="userlist_super_vo" />
 	</typeAliases>
 	<mappers>
 		<mapper resource="mappers/boardlist_report_mapper.xml" />
@@ -23,6 +24,7 @@
 		<mapper resource="mappers/boardlist_room_mapper.xml" />
 		<mapper resource="mappers/boardlist_outmember_mapper.xml" />
 		<mapper resource="mappers/admin_login.xml" />
-		<mapper resource="mappers/adminlist_super.xml" />
+		<mapper resource="mappers/adminlist_super_mapper.xml" />
+		<mapper resource="mappers/userlist_super_mapper.xml" />
 	</mappers>
 </configuration>

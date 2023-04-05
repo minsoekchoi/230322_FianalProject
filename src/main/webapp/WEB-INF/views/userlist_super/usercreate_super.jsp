@@ -6,7 +6,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
 <!-- link  -->
 <link href="resources/css/homepage.css" rel="stylesheet">
 <link rel='stylesheet'
@@ -47,15 +46,23 @@
 <link href="resources/view_origin/css/view_origin.css" rel="stylesheet">
 <link href="resources/attribute_list/css/attribute_table.css"
 	rel="stylesheet">
-<link href="resources/attribute_list/css/radio_buttons.css"
-	rel="stylesheet">
-<link href="resources/attribute_list/css/searchbox.css" rel="stylesheet">
 <link href="resources/attribute_list/css/table_buttons.css"
 	rel="stylesheet">
+<title>사용자 생성</title>
+<script type="text/javascript">
+	function usercreate_super_exit(f) {
+		f.action = "userlist_super.do"
+	}
 
-<title>신고내역리스트</title>
-<link rel="stylesheet" type="text/css"
-	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	function usercreate_super_ok(f) {
+		if (confirm("사용자를 생성하시겠습니까?")) {
+			f.action = "usercreate_super_ok.do"
+			alert("사용자가 생성되었습니다.");
+		} else {
+			return;
+		}
+	}
+</script>
 </head>
 <body>
 	<div id="wrap">
@@ -72,13 +79,12 @@
 			</label>
 			<div id="sidebarMenu">
 				<ul class="sidebarMenuInner">
-					<li style="font-size: 15px;"><a href="boardlist_member.do"><i>&emsp;회원관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_room.do"><i>&emsp;방관리리스트</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_report.do"><i>&emsp;신고내역<br>&emsp;관리리스트
+					<li style="font-size: 15px;"><a href="userlist_super.do"><i>&emsp;사용자관리<br>&emsp;리스트
 						</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist_outmember.do"><i>&emsp;탈퇴회원<br>&emsp;관리리스트
+					<li style="font-size: 15px;"><a href="usercreate_super.do"><i>&emsp;사용자생성</i></a></li>
+					<li style="font-size: 15px;"><a href="adminlist_super.do"><i>&emsp;관리자관리<br>&emsp;리스트
 						</i></a></li>
-					<li style="font-size: 15px;"><a href="boardlist.do"><i>&emsp;공지사항</i></a></li>
+					<li style="font-size: 15px;"><a href="admincreate_super.do"><i>&emsp;관리자생성</i></a></li>
 					<li style="font-size: 15px;"><a href="admin_login.do"><i>&emsp;로그아웃</i></a></li>
 				</ul>
 			</div>
@@ -168,123 +174,60 @@
 			}
 		</script>
 		<section>
-			<div id="container_list">
-				<div id="wrapper_list">
-					<div id="wrapper_list_inner">
-						<h2 id="headline">신고내역리스트</h2>
-						<div id="container_radio">
-							<form id="container_radio_form">
-								<label class="radio_label"> <input type="radio"
-									name="radio" checked /> <span>전체보기</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고번호</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>ID</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>가해자닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고자닉네임</span>
-								</label> <label class="radio_label"> <input type="radio"
-									name="radio" /> <span>신고일자</span>
-								</label>
-							</form>
+			<form method="post" style="margin: 0 auto;">
+				<div id="container_list">
+					<div id="wrapper_list">
+						<div id="wrapper_list_inner">
+							<h2 id="headline">사용자 생성</h2>
+							<table class="list_table" style="margin-top: 50px;">
+								<colgroup>
+									<col width="90px" />
+									<col width="210px" />
+									<col width="210px" />
+									<col width="210px" />
+									<col width="210px" />
+									<col width="210px" />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>회원번호</th>
+										<th>ID</th>
+										<th>이름</th>
+										<th>닉네임</th>
+										<th>생년월일</th>
+										<th>성별</th>
+									</tr>
+
+									<tr class="KOTRA-fontsize-80">
+										<td>자동부여</td>
+										<td><input type="text" style="height: 20px" id="user_id"
+											name="user_id"></td>
+										<td><input type="text" style="height: 20px"
+											name="user_name"></td>
+										<td><input type="text" style="height: 20px"
+											name="user_nickname"></td>
+										<td><input type="text" style="height: 20px"
+											name="user_birthday"></td>
+										<td><select name="gender_select"
+											style="width: 180px; height: 25px">
+												<option value="">--선택하세요--</option>
+												<option value="male">남</option>
+												<option value="female">여</option>
+										</select></td>
+									</tr>
+								</tbody>
+							</table>
+							<button class="btn hover1"
+								onclick="usercreate_super_exit(this.form)"
+								style="margin-right: 33px; margin-left: 20px; margin-top: 15px;">취소</button>
+							<button class="btn hover1"
+								onclick="usercreate_super_ok(this.form)"
+								style="margin-top: 15px;">사용자생성</button>
+
 						</div>
-						<div id="container_searchbox">
-							<div class="searchbox">
-								<input type="text" class="searchtxt" placeholder="search">
-								<a class="searchbtn" href="#"> <i class="fas fa-search"></i>
-								</a>
-							</div>
-						</div>
-						<table class="list_table">
-							<colgroup>
-								<col width="100px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="200px" />
-								<col width="120px" />
-								<col width="120px" />
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>신고번호</th>
-									<th>ID(신고받은사람)</th>
-									<th>닉네임(신고받은사람)</th>
-									<th>신고자</th>
-									<th>신고사유</th>
-									<th>신고일자</th>
-									<th>신고삭제</th>
-								</tr>
-								<c:choose>
-									<c:when test="${empty boardlist_report}">
-										<tr>
-											<td colspan="7"><h2>자료가 존재하지 않습니다.</h2></td>
-										</tr>
-									</c:when>
-									<c:otherwise>
-										<c:forEach var="k" items="${boardlist_report}" varStatus="vs">
-											<tr class="KOTRA-fontsize-80">
-												<td>${k.report_idx}</td>
-												<td>${k.target_u_idx}</td>
-												<td>${k.target_u_idx}</td>
-												<td>${k.u_idx}</td>
-												<td><a class="gradient-btn" href="view_report.do">자세히보기</a></td>
-												<td>${k.report_datetime}</td>
-												<td><a class="gradient-btn">신고삭제</a></td>
-											</tr>
-										</c:forEach>
-									</c:otherwise>
-								</c:choose>
-							</tbody>
-							<!-- 페이징기법 -->
-							<tfoot>
-								<tr>
-									<td colspan="7">
-										<ol class="paging">
-											<!-- 이전 -->
-											<c:choose>
-												<c:when test="${paging.beginBlock <= paging.pagePerBlock}">
-													<li class="disable">이전으로</li>
-												</c:when>
-												<c:otherwise>
-													<li><a
-														href="boardlist_report.do?cPage=${paging.beginBlock - paging.pagePerBlock}">이전으로</a></li>
-												</c:otherwise>
-											</c:choose>
-											<!-- 블록안에 들어간 페이지번호들 -->
-											<c:forEach begin="${paging.beginBlock}"
-												end="${paging.endBlock}" step="1" var="k">
-												<!-- 현재 페이지와 아닌 페이지 구분 -->
-												<c:choose>
-													<c:when test="${k == paging.nowPage}">
-														<!-- 현재페이지는 색깔만  -->
-														<li class="now">${k}</li>
-													</c:when>
-													<c:otherwise>
-														<!-- 다른 페이지는 링크까지 -->
-														<li><a href="boardlist_report.do?cPage=${k}">${k}</a></li>
-													</c:otherwise>
-												</c:choose>
-											</c:forEach>
-											<!-- 다음 -->
-											<c:choose>
-												<c:when test="${paging.endBlock >= paging.totalPage}">
-													<li class="disable">다음으로</li>
-												</c:when>
-												<c:otherwise>
-													<li><a
-														href="boardlist_report.do?cPage=${paging.beginBlock + paging.pagePerBlock}">다음으로</a></li>
-												</c:otherwise>
-											</c:choose>
-										</ol>
-									</td>
-								</tr>
-							</tfoot>
-						</table>
 					</div>
 				</div>
-			</div>
+			</form>
 		</section>
 		<!-- footer 추가  -->
 		<footer class="footer">

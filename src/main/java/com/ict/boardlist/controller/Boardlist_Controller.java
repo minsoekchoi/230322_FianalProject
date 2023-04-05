@@ -89,4 +89,16 @@ public class Boardlist_Controller {
 		return mv;
 	}
 
+	@RequestMapping("boardlist_write.do")
+	public ModelAndView boardlist_Write() {
+		ModelAndView mv = new ModelAndView("boardlist/boardlist_write");
+		return mv;
+	}
+
+	@RequestMapping("view_boardlist.do")
+	public ModelAndView view_Boardlist() {
+		ModelAndView mv = new ModelAndView("view_boardlist");
+		return mv;
+	}
+
 }

@@ -40,9 +40,9 @@ public class LoginController {
 		}
 	}
 
-	@RequestMapping("adminComplete.do")
-	public ModelAndView returnAdminComplete() {
-		return new ModelAndView("boardlist_member/boardlist_member");
-	}
+//	@RequestMapping("adminComplete.do")
+//	public ModelAndView returnAdminComplete() {
+//		return new ModelAndView("boardlist_member/boardlist_member");
+//	}
 
 }

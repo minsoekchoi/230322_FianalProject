@@ -15,29 +15,51 @@
 	function getAdmin() {
 		var admin_id = document.getElementById('admin_id').value;
 		var admin_pwd = document.getElementById('admin_pwd').value;
-		$(function() {
-			$.ajax({
-				type : 'POST',
-				url : 'getAdminLogin.do',
-				data : {
-					admin_id : admin_id,
-					admin_pwd : admin_pwd
-				},
-				dataType : 'text',
-				success : function(response) {
-
-					if (response === "1") {
-						window.location.href = "adminComplete.do";
-					} else {
-						alert('로그인 실패');
+		if (admin_id === "superadmin@ict.com") {
+			$(function() {
+				$.ajax({
+					type : 'POST',
+					url : 'getAdminLogin.do',
+					data : {
+						admin_id : admin_id,
+						admin_pwd : admin_pwd
+					},
+					dataType : 'text',
+					success : function(response) {
+						if (response === "1") {
+							window.location.href = "userlist_super.do";
+						} else {
+							alert('로그인 실패');
+						}
+					},
+					error : function(xhr, status, error) {
+						alert('error : ' + error);
 					}
-
-				},
-				error : function(xhr, status, error) {
-					alert('error : ' + error);
-				}
+				});
 			});
-		});
+		} else {
+			$(function() {
+				$.ajax({
+					type : 'POST',
+					url : 'getAdminLogin.do',
+					data : {
+						admin_id : admin_id,
+						admin_pwd : admin_pwd
+					},
+					dataType : 'text',
+					success : function(response) {
+						if (response === "1") {
+							window.location.href = "boardlist_member.do";
+						} else {
+							alert('로그인 실패');
+						}
+					},
+					error : function(xhr, status, error) {
+						alert('error : ' + error);
+					}
+				});
+			});
+		}
 	}
 </script>
 <body>

@@ -36,6 +36,7 @@ public class Adminlist_Super_Controller {
 		this.paging = paging;
 	}
 
+	// 관리자 리스트 출력
 	@RequestMapping("adminlist_super.do")
 	public ModelAndView getadminList_Super(HttpServletRequest request) {
 		ModelAndView mv = new ModelAndView("adminlist_super/adminlist_super");
@@ -80,6 +81,13 @@ public class Adminlist_Super_Controller {
 		mv.addObject("adminlist_super", adminlist_super);
 		mv.addObject("paging", paging);
 
+		return mv;
+	}
+
+	// 관리자 생성
+	@RequestMapping("admincreate_super.do")
+	public ModelAndView admincreate_Super() {
+		ModelAndView mv = new ModelAndView("adminlist_super/admincreate_super");
 		return mv;
 	}
 

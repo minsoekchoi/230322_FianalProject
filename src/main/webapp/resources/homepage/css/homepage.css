@@ -22,14 +22,14 @@ section {
 	display: flex;
 	width: 1920px;
 	height: 780px;
-	background-color: #F8F8F8;
+	background-color: floralwhite;
 	margin: 0 auto;
 }
 
 #wrap {
 	width: 100vw;
 	margin: 0 auto;
-	background-color: #F8F8F8;
+	background-color: floralwhite;
 }
 /*헤더 부분 css  */
 header {
@@ -100,7 +100,7 @@ input.checkbox1[type=checkbox]:not(:checked)+label * {
 }
 
 input.checkbox[type=checkbox]:checked+label {
-	padding: 1.125rem 5rem 0.75rem 2rem;
+	padding: 1.125rem 4rem 0.75rem 2rem;
 	font-size: 75%;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	background: black;
@@ -139,7 +139,7 @@ nav {
 }
 
 #sidebarMenu {
-	height: 90.4%;
+	height: 101.8%;
 	position: absolute;
 	left: 0;
 	width: 180px;
@@ -161,7 +161,7 @@ nav {
 
 .sidebarMenuInner li {
 	list-style: none;
-	padding: 13px;
+	padding: 24px;
 }
 
 .sidebarMenuInner li span {
@@ -428,7 +428,7 @@ button:hover {
 	font-family: 'Noto Sans KR', sans-serif;
 	min-width: 1000px;
 	min-height: -300px;
-	margin-top: 32px;
+	margin-top: 28px;
 }
 
 .footer-col1 {
@@ -466,7 +466,6 @@ button:hover {
 
 .social-icons li {
 	display: inline-block;
-	margin: 0.15em;
 	position: relative;
 	font-size: 1.2em;
 }
@@ -652,4 +651,61 @@ legend {
 	transition: all 0.3s ease;
 	position: relative;
 	display: inline-block;
+}
+.draw-border {
+ 	
+	color:black;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.draw-border:hover {
+    color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #ffe593;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+}
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+/* 메세지 x 타입 오른쪽 끝 */
+.right {
+  margin-left: 0.75rem;
+  float: right;
 }
